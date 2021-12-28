@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp5.scoreView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="scoreView" Height="450" Width="800">
+    <Grid>
+        <Label Content="國文(0.5)" HorizontalAlignment="Left" Margin="101,83,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="數學(0.3)" HorizontalAlignment="Left" Margin="101,145,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="英文(0.2)" HorizontalAlignment="Left" Margin="101,0,0,0" VerticalAlignment="Center" FontSize="20"/>
+        <Slider x:Name="Chinese" HorizontalAlignment="Left" Margin="197,91,0,0" VerticalAlignment="Top" Width="500" Height="20" Maximum="100" SmallChange="1" Value="50" IsSnapToTickEnabled="True" ValueChanged="ValueChanged"/>
+        <Label x:Name="cht" Content="{Binding Value, ElementName=Chinese}" HorizontalAlignment="Left" Margin="702,88,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="Math" HorizontalAlignment="Left" Margin="197,153,0,0" VerticalAlignment="Top" Width="500" Height="20" Maximum="100" SmallChange="1" Value="50" IsSnapToTickEnabled="True" ValueChanged="ValueChanged"/>
+        <Label x:Name="math" Content="{Binding Value, ElementName=Math}" HorizontalAlignment="Left" Margin="702,150,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="English" HorizontalAlignment="Left" Margin="197,0,0,0" VerticalAlignment="Center" Width="500" Height="20" Maximum="100" SmallChange="1" Value="50" IsSnapToTickEnabled="True" ValueChanged="ValueChanged"/>
+        <Label x:Name="eng" Content="{Binding Value, ElementName=English}" HorizontalAlignment="Left" Margin="702,0,0,0" VerticalAlignment="Center"/>
+        <TextBlock x:Name="scoreBlock" HorizontalAlignment="Center" Margin="0,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="163" Width="452" Background="#FFA7FCB8" Text="w"/>
+
+    </Grid>
+</Window>

@@ -9,7 +9,7 @@
     <Grid>
         <Label Content="4A9G0144 蔡士煒" HorizontalAlignment="Center" Margin="0,111,0,0" VerticalAlignment="Top" Height="47" Width="282" FontSize="32"/>
         <Button x:Name="scoreButton" Content="計算成績" HorizontalAlignment="Left" Height="60" Margin="141,0,0,0" VerticalAlignment="Center" Width="178" FontSize="20" Click="scoreButton_Click"/>
-        <Button x:Name="mathButton" Content="四則運算" HorizontalAlignment="Left" Height="60" Margin="445,0,0,0" VerticalAlignment="Center" Width="178" FontSize="20"/>
+        <Button x:Name="mathButton" Content="四則運算" HorizontalAlignment="Left" Height="60" Margin="445,0,0,0" VerticalAlignment="Center" Width="178" FontSize="20" Click="mathButton_Click"/>
 
     </Grid>
 </Window>

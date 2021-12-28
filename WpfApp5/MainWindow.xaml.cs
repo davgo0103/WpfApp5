@@ -27,7 +27,14 @@ namespace WpfApp5
 
         private void scoreButton_Click(object sender, RoutedEventArgs e)
         {
+            scoreView scoreview= new scoreView();
+            scoreview.ShowDialog();
+        }
 
+        private void mathButton_Click(object sender, RoutedEventArgs e)
+        {
+            mathView mathview = new mathView();
+            mathview.ShowDialog();
         }
     }
 }
