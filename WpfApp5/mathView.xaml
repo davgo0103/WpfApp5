@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="mathView" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="451*"/>
+            <ColumnDefinition Width="189*"/>
+            <ColumnDefinition Width="160*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="L1" HorizontalAlignment="Left" Height="46" Margin="50,171,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="137" Background="#FFECED9D" FontSize="36"/>
+        <TextBox x:Name="L2" HorizontalAlignment="Left" Height="46" Margin="400,171,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="137" Background="#FFECED9D" FontSize="36" Grid.ColumnSpan="2"/>
+        <Label x:Name="L3" HorizontalAlignment="Left" Height="46" Margin="179,171,0,0"  VerticalAlignment="Top" Width="132" Background="#FFED9D9D" FontSize="36" Grid.ColumnSpan="2" Grid.Column="1" Content="0" VerticalContentAlignment="Top" HorizontalContentAlignment="Left" Padding="5,0,5,5"/>
+        <GroupBox Header="運算符號" Margin="226,94,113,130" FontSize="20">
+            <StackPanel>
+                <RadioButton x:Name="add" Content="+" FontSize="36" Checked="Radiobutton_Checked"/>
+                <RadioButton x:Name="reduce" Content="-" FontSize="36" Checked="Radiobutton_Checked"/>
+                <RadioButton x:Name="multiplication" Content="*" FontSize="36" Checked="Radiobutton_Checked"/>
+                <RadioButton x:Name="division" Content="/" FontSize="36" Checked="Radiobutton_Checked"/>
+            </StackPanel>
+        </GroupBox>
+
     </Grid>
 </Window>

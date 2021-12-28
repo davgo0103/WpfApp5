@@ -23,5 +23,35 @@ namespace WpfApp5
         {
             InitializeComponent();
         }
+
+        private void Radiobutton_Checked(object sender, RoutedEventArgs e)
+        {
+            int n1 = Convert.ToInt32(L1.Text);
+            int n2 = Convert.ToInt32(L2.Text);
+            if (add.IsChecked == true)
+            {
+                L3.Content = (n1 + n2);
+            }
+            else if (reduce.IsChecked == true)
+            {
+                L3.Content = (n1 - n2);
+            }
+            else if (multiplication.IsChecked == true)
+            {
+                L3.Content = (n1 * n2);
+            }
+            else if (division.IsChecked == true)
+            {
+                if(n2 == 0)
+                {
+                    MessageBox.Show("除數不能為0，重新輸入");
+                }
+                else
+                {
+                    L3.Content = (n1 / n2);
+                }
+                
+            }
+        }
     }
 }
